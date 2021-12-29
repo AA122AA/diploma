@@ -1,0 +1,9 @@
+discovery.type: single-node
+node.name: "forever alone"
+network.host: 0.0.0.0
+
+  # Настройка базовой безопасности  
+xpack.license.self_generated.type: basic
+xpack.security.enabled: true
+xpack.monitoring.collection.enabled: true
+
