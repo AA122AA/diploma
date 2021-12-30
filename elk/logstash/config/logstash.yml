@@ -4,5 +4,5 @@ xpack.monitoring.elasticsearch.hosts: [ "http://elasticsearch:9200" ]
 ## xpack креды безопасность
 #
 xpack.monitoring.enabled: true
-xpack.monitoring.elasticsearch.username: logstash_system
-xpack.monitoring.elasticsearch.password: AcsOMPv9yYYgFHJWuvNe
+xpack.monitoring.elasticsearch.username: logstash_internal
+xpack.monitoring.elasticsearch.password: "000000"
