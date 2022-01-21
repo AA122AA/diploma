@@ -46,3 +46,8 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+После установки вышеперечисленного пошел процесс настройки elk стака с нуля.
+Спустя 100 правок в каждом yml и conf файле, вроде выведена рабочая
+конфигурация. 
+Заметка: для того чтобы logstash мог писать в elastic надо создать отдельного
+пользователя либо через ui kibana или через post запросы.
