@@ -1,0 +1,27 @@
+# Nmap 7.92 scan initiated Mon May  2 12:18:50 2022 as: nmap -p445 -vv --script smb-vuln-ms17-010.nse -oN smb-vuln.nmap 192.168.128.52
+Nmap scan report for 192.168.128.52
+Host is up, received arp-response (0.00044s latency).
+Scanned at 2022-05-02 12:18:50 EDT for 0s
+
+PORT    STATE SERVICE      REASON
+445/tcp open  microsoft-ds syn-ack ttl 128
+MAC Address: 08:00:27:7A:CA:46 (Oracle VirtualBox virtual NIC)
+
+Host script results:
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|_      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon May  2 12:18:50 2022 -- 1 IP address (1 host up) scanned in 0.43 seconds

