@@ -1,0 +1,4 @@
+Для брута будем использовать тулзу crowbar. Для установки необходимо ввести следующую команду:
+sudo apt install -y crowbar
+Далее вводим команду
+crowbar --server <target ip>/32 -b [protocol] -u [username] -C <path to passwords file>
